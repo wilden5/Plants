@@ -154,3 +154,65 @@ body {
     border-radius: 10px;
     color: #000000;
 }
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 666px;
+    background: #FFFFFF;
+}
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1222px;
+    height: 479px;
+}
+
+.about-us-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 605px;
+    height: 350px;
+}
+
+.about-us-title {
+    width: 463px;
+    height: 102px;
+}
+
+.au-h2 {
+    margin: 0;
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+}
+
+.about-orange {
+    color: #E06733;
+}
+
+.about-us-description-full {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #636060;
+    width: 605px;
+    height: 208px;
+}
+
+.abu-description {
+    margin: 0;
+}
+
+.houseplant {
+    width: 464px;
+    height: 479px;
+}
