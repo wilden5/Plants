@@ -153,6 +153,7 @@ body {
     border: 2px solid #E06733;
     border-radius: 10px;
     color: #000000;
+    background-color: #EDF2EC;
 }
 
 .about-container {
@@ -216,3 +217,118 @@ body {
     width: 464px;
     height: 479px;
 }
+
+/* Service section starts */
+
+.service-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+    height: 1300px;
+    background: #EDF2EC;
+}
+
+.service-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1007px;
+    height: 94px;
+}
+
+.service-title {
+    width: 306px;
+    height: 94px;
+    display: flex;
+    padding-bottom: 7px;
+}
+
+.service-h2 {
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    color: #499A18;
+    margin: 0;
+}
+
+.service-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 559px;
+    height: 50px;
+    padding-top: 7px;
+}
+
+.service-b {
+    width: 161px;
+    height: 50px;
+    font-family: 'Inika';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: #E06733;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background-color: #EDF2EC;
+}
+
+.services-main {
+    width: 1222px;
+    height: 955px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    padding-bottom: 77px;
+}
+
+.service-item {
+    width: 330px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    box-sizing: border-box;
+    width: 330px;
+    height: 100px;
+    border: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 27px;
+    justify-content: space-evenly;
+}
+
+.title-services-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #E06733;
+    margin: 0;
+    padding-bottom: 4px;
+}
+
+.desc-service-item {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #717171;
+    margin: 0;
+}
+
+.n2lc {
+    padding-right: 4px;
+}
+
+/* Service section ends */
