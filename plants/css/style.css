@@ -283,7 +283,6 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    /* padding-bottom: 77px; */
     margin-bottom: 77px;
 }
 
@@ -333,3 +332,142 @@ body {
 }
 
 /* Service section ends */
+
+/* Prices section starts */
+
+.prices-section {
+    height: 560px;
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+}
+
+.prices-wrapper {
+    margin-top: 40px;
+    width: 1222px;
+    height: 405px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+
+.prices-box {
+    max-width: 332px;
+}
+
+.prices-title {
+    max-width: 135px;
+    max-height: 49px;
+
+    padding-bottom: 60px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+    color: #000000;
+    margin: 0;
+}
+
+.prices-item {
+    display: flex;
+    justify-content: center;
+    max-width: 332px;
+    max-height: 282px;
+    border: 1px solid #E3E1D5;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.p-items {
+    margin: 34px 41px 34px 41px;
+    display: flex;
+    flex-direction: column;
+    max-width: 250px;
+    max-height: 214px;
+}
+
+.item-basics {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 214px;
+    background: #EDF2EC;
+    border-radius: 20px;
+}
+
+.ibp1 {
+    margin-bottom: 28px;
+    margin-top: -1px;
+}
+
+.ibp2 {
+    margin-bottom: 30px;
+    margin-top: 1px;
+}
+
+.p-item-text {
+    max-width: 100px;
+    margin: 16px 54px 16px 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.p-button {
+    margin-right: 40px;
+    border: none;
+    height: 16px;
+    width: 16px;
+    background: url(../assets/png/accordion_btn.png) no-repeat;
+}
+
+.text-call-us {
+    max-width: 452px;
+    max-height: 191px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.our-best {
+    margin: 0;
+    margin-bottom: 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    text-align: right;
+    color: #000000;
+}
+
+.call-us {
+    /* margin-bottom: 41px; */
+    padding: 11px 33px 11px 32px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-align: center;
+    color: #E06733;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+.prices-leafs {
+    margin-top: 40px;
+    max-width: 152px;
+    max-height: 174px;
+}
+
+/* Prices section ends */
