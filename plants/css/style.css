@@ -283,7 +283,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     align-content: space-between;
-    padding-bottom: 77px;
+    /* padding-bottom: 77px; */
+    margin-bottom: 77px;
 }
 
 .service-item {
