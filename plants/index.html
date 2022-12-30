@@ -5,8 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>We grow plants shop</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="assets/png/icons-gar.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,11 +31,13 @@
             </div>
             <nav class="nav">
                 <ul class="nav-list">
-                    <li class="navigation-item"><a href="#home" class="navigation-link">Home</a></li>
-                    <li class="navigation-item"><a href="#about-us" class="navigation-link">About us</a></li>
+                    <li class="navigation-item"><a href="#welcome" class="navigation-link">Home</a></li>
+                    <li class="navigation-item"><a href="#about-us" class="navigation-link">About us</a>
+                    </li>
                     <li class="navigation-item"><a href="#service" class="navigation-link">Service</a></li>
-                    <li class="navigation-item"><a href="#service" class="navigation-link">Price</a></li>
-                    <li class="navigation-item"><a href="#service" class="navigation-link">Contacts</a></li>
+                    <li class="navigation-item"><a href="#price" class="navigation-link">Price</a></li>
+                    <li class="navigation-item"><a href="#contacts" class="navigation-link">Contacts</a>
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -42,13 +45,13 @@
     </header>
     <main class="main">
         <div class="welcome-container">
-            <section class="welcome-section">
+            <section class="welcome-section" id="welcome">
                 <div class="leafs">
                     <img src="./assets/png/leafs.png" alt="leafs-logo">
                 </div>
                 <div class="welcome-description">
                     <div class="div-title">
-                        <p class="sp-description">We grow <span class="green-w">plants</span> and give you oxygen</p>
+                        <h1 class="sp-description">We grow <span class="green-w">plants</span> and give you oxygen</h1>
                     </div>
                     <div class="long-description">
                         <p class="p-description">Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -60,7 +63,7 @@
             </section>
         </div>
         <div class="about-container">
-            <section class="about-section">
+            <section class="about-section" id="about-us">
                 <div class="about-us-desc">
                     <div class="about-us-title">
                         <h2 class="au-h2">We are <span class="about-orange">professional experienced</span> gardeners
@@ -75,11 +78,11 @@
                     </div>
                 </div>
                 <div class="houseplant">
-                    <img src="./assets/png/houseplant 1.png" alt="houseplant">
+                    <img src="./assets/png/houseplant1.png" alt="houseplant">
                 </div>
             </section>
         </div>
-        <section class="service-container">
+        <section class="service-container" id="service">
             <div class="service-content">
                 <div class="service-title">
                     <h2 class="service-h2">Service and our projects</h2>
@@ -135,13 +138,14 @@
                 </div>
             </div>
         </section>
-        <section class="prices-section">
+        <section class="prices-section" id="price">
             <div class="prices-wrapper">
                 <div class="prices-box">
                     <h2 class="prices-title">Prices</h2>
                     <div class="prices-item">
                         <div class="p-items">
                             <div class="item-basics ibp1">
+                                <!-- accordion -->
                                 <p class="p-item-text">Basics</p>
                                 <button class="p-button"></button>
                             </div>
@@ -153,6 +157,7 @@
                                 <p class="p-item-text">Pro care</p>
                                 <button class="p-button"></button>
                             </div>
+                            <!-- accordion -->
                         </div>
                     </div>
                 </div>
@@ -165,8 +170,8 @@
                 </div>
             </div>
         </section>
-        <section class="contacts">
-            <img src="./assets/png/contact_woman 1.png" alt="contact-woman" class="contact-woman" width="400"
+        <section class="contacts" id="contacts">
+            <img src="./assets/png/contact_woman1.png" alt="contact-woman" class="contact-woman" width="400"
                 height="497">
             <h2 class="contacts__title">Contact us</h2>
             <div class="contacts__container">
@@ -180,20 +185,29 @@
             <div class="footer__container-data">
                 <p class="data__copyright dc-copy"> &COPY;</p>
                 <p class="data__copyright dc-year">2022</p>
-                <p class="data__copyright dc-github">github</p>
+                <p class="data__copyright dc-github"><a href="https://github.com/wilden5" target="_blank"
+                        class="data-link">github</a>
+                </p>
             </div>
-            <p class="footer__container-rsschool">Rolling Scopes School</p>
+            <p class="footer__container-rsschool"><a href="https://rs.school/js-stage0/" target="_blank"
+                    class="data-link">Rolling
+                    Scopes School</a></p>
             <ul class="footer__container-social-links">
-                <li class="social-links__link"><img src="./assets/svg/inst 1.svg" alt="inst-logo" class="slink__pin">
+                <li class="social-links__link"><a href="https://www.instagram.com/" target="_blank"
+                        class="navigation-link"><img src="./assets/svg/inst1.svg" alt="inst-logo"
+                            class="slink__pin"></a>
                 </li>
-                <li class="social-links__link"><img src="./assets/svg/fb 1.svg" alt="facebook-logo" class="slink__pin">
+                <li class="social-links__link"><a href="https://www.facebook.com/" target="_blank"
+                        class="navigation-link"><img src="./assets/svg/fb1.svg" alt="facebook-logo"
+                            class="slink__pin"></a>
                 </li>
-                <li class="social-links__link"><img src="./assets/svg/tw 1.svg" alt="twitter-logo" class="slink__pin">
+                <li class="social-links__link"><a href="https://www.twitter.com/" target="_blank"
+                        class="navigation-link"><img src="./assets/svg/tw1.svg" alt="twitter-logo"
+                            class="slink__pin"></a>
                 </li>
-                <li class="social-links__link"><img src="./assets/svg/pinterest 1.svg" alt="pin-logo"></li>
+                <li class="social-links__link"><a href="https://www.pinterest.com/" target="_blank"
+                        class="navigation-link"><img src="./assets/svg/pinterest1.svg" alt="pin-logo"></a></li>
             </ul>
         </div>
     </footer>
 </body>
-
-</html>
