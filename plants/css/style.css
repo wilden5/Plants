@@ -633,4 +633,8 @@ html {
     transform: scale(1.15);
 }
 
+.service-item:hover {
+    transform: scale(1.05);
+}
+
 /* Footer ends */
