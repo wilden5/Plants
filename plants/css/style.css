@@ -78,7 +78,7 @@ html {
     padding-right: 10px;
 }
 
-.welcome-container {
+.welcome {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,7 +86,7 @@ html {
     background-color: #EDF2EC;
 }
 
-.welcome-section {
+.welcome-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -168,7 +168,7 @@ html {
     box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.25);
 }
 
-.about-container {
+.about {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -176,7 +176,7 @@ html {
     background: #FFFFFF;
 }
 
-.about-section {
+.about-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -232,7 +232,7 @@ html {
 
 /* Service section starts */
 
-.service-container {
+.service {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -242,7 +242,7 @@ html {
     background: #EDF2EC;
 }
 
-.service-content {
+.service-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -347,7 +347,7 @@ html {
 
 /* Prices section starts */
 
-.prices-section {
+.prices {
     height: 560px;
     background: #FFFFFF;
     display: flex;
@@ -634,7 +634,7 @@ html {
 }
 
 .service-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 /* Footer ends */
