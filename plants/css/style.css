@@ -174,7 +174,7 @@ html {
 
 .welcome__description-learn-more:hover,
 .service__buttons-item:hover,
-.call-us:hover {
+.prices__contact-button:hover {
     cursor: pointer;
     transform: translateY(1px);
     box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.25);
