@@ -386,31 +386,33 @@ html {
 /* Prices section starts */
 
 .prices {
-    height: 560px;
+    /* max-height: 560px; */
     background: #FFFFFF;
     display: flex;
     justify-content: center;
 }
 
 .prices-wrapper {
-    margin-top: 40px;
-    width: 1222px;
-    height: 405px;
+    padding-top: 40px;
+    margin-bottom: 115px;
+    max-width: 1222px;
+    /* max-height: 405px; */
     display: flex;
     flex-wrap: wrap;
-    align-content: space-between;
+    justify-content: flex-end;
+    /* align-content: space-between;
     align-items: flex-end;
-    flex-direction: column;
+    flex-direction: column;  */
 }
-
 
 .prices-box {
     max-width: 332px;
+    margin-right: 438px;
 }
 
 .prices-title {
     max-width: 135px;
-    max-height: 49px;
+    /* max-height: 49px; */
 
     padding-bottom: 60px;
     font-family: 'Inter';
@@ -426,7 +428,7 @@ html {
     display: flex;
     justify-content: center;
     max-width: 332px;
-    max-height: 282px;
+    /* max-height: 282px; */
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     box-sizing: border-box;
@@ -437,15 +439,15 @@ html {
     display: flex;
     flex-direction: column;
     max-width: 250px;
-    max-height: 214px;
+    /* max-height: 214px; */
 }
 
 .item-basics {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 250px;
-    height: 214px;
+    max-width: 250px;
+    /* max-height: 214px; */
     background: #EDF2EC;
     border-radius: 20px;
 }
@@ -462,7 +464,7 @@ html {
 
 .p-item-text {
     max-width: 100px;
-    margin: 16px 54px 16px 40px;
+    margin: 16px 64px 16px 40px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -480,8 +482,9 @@ html {
 }
 
 .text-call-us {
+    /* margin-bottom: 438px; */
     max-width: 452px;
-    max-height: 191px;
+    /* max-height: 191px; */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -515,9 +518,9 @@ html {
 }
 
 .prices-leafs {
-    margin-top: 40px;
-    max-width: 152px;
-    max-height: 174px;
+    margin-top: -167px;
+    /* max-width: 152px;
+    max-height: 174px; */
 }
 
 /* Prices section ends */
