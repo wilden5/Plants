@@ -528,10 +528,11 @@ html {
 /* Contacts section starts */
 
 .contacts {
-    max-height: 550px;
+    /* max-height: 550px; */
     display: flex;
     justify-content: space-around;
     background: #EDF2EC;
+    margin-bottom: 3px;
 }
 
 .contact-woman {
@@ -541,7 +542,8 @@ html {
 }
 
 .contacts__title {
-    max-height: 51px;
+    /* max-height: 51px; */
+    margin-right: 10px;
     padding-top: 59px;
     font-family: 'Inika';
     font-style: normal;
@@ -549,16 +551,19 @@ html {
     font-size: 40px;
     line-height: 52px;
     color: #499A18;
-    margin: 0;
+    /* margin: 0; */
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .contacts__container {
+    padding-bottom: 2px;
     margin-right: 75px;
     margin-top: 146px;
     display: flex;
     align-items: center;
-    width: 450px;
-    height: 50px;
+    max-width: 450px;
+    max-height: 50px;
     background: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 0px;
@@ -581,8 +586,8 @@ html {
     background: url(../assets/svg/accordion_btn.svg) no-repeat;
     height: 16px;
     width: 16px;
-    padding-right: 35px;
-    margin-left: 196px;
+    padding-right: 47px;
+    margin-left: 193px;
     border: none;
 }
 
