@@ -651,3 +651,64 @@ html {
 }
 
 /* Footer ends */
+
+/* Media starts */
+
+@media screen and (max-width: 768px) {
+
+    .wrapper__header {
+        padding-top: 35px;
+    }
+
+    .header__info {
+        margin-right: 139px;
+        margin-bottom: 31px;
+    }
+
+    .nav__list {
+        padding-top: 0;
+    }
+
+    .nav__list-item {
+        margin-right: 47px;
+    }
+
+    .welcome__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .about__wrapper {
+        flex-wrap: wrap;
+    }
+
+    .service {
+        align-content: flex-start;
+    }
+
+    .service__main {
+        flex-direction: column;
+    }
+
+    .service__buttons {
+        flex-direction: column;
+    }
+
+    .prices__wrapper {
+        justify-content: flex-start;
+    }
+
+    .prices__subscription-box {
+        margin-right: 0;
+    }
+
+    .contacts {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .footer__wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+/* Media ends */
