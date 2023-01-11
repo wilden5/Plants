@@ -652,9 +652,11 @@ html {
 
 /* Footer ends */
 
-/* Media starts */
+/* Media 768px starts */
 
 @media screen and (max-width: 768px) {
+
+    /* Header 768px starts */
 
     .wrapper__header {
         padding-top: 35px;
@@ -673,13 +675,61 @@ html {
         margin-right: 47px;
     }
 
+    /* Header 768px ends */
+
+    /* Welcome 768px starts */
+
     .welcome__wrapper {
         flex-wrap: wrap;
+        margin-bottom: 70px;
+        padding-top: 30px;
+        align-items: flex-start;
     }
+
+    .welcome__leafs {
+        margin-right: 0;
+        max-width: 280px;
+        order: 3;
+    }
+
+    .welcome__leafs-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .welcome__description {
+        max-width: 346px;
+        margin-right: 42px;
+    }
+
+    .welcome__description-title {
+        margin-bottom: 30px;
+    }
+
+    .welcome__description-h1 {
+        font-size: 35px;
+    }
+
+    .welcome__description-long {
+        font-size: 16px;
+        margin-bottom: 35px;
+        line-height: 25px;
+        padding-left: 5px;
+    }
+
+    .welcome__description-learn-more {
+        padding-left: 26px;
+    }
+
+    /* Welcome 768px ends */
+
+    /* About 768px starts */
 
     .about__wrapper {
         flex-wrap: wrap;
     }
+
+    /* About 768px ends */
 
     .service {
         align-content: flex-start;
@@ -711,4 +761,4 @@ html {
     }
 }
 
-/* Media ends */
+/* Media 768px ends */
