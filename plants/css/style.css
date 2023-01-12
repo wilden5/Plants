@@ -846,12 +846,40 @@ html {
     /* Prices 768px starts */
 
     .prices__wrapper {
-        justify-content: flex-start;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
     }
 
     .prices__subscription-box {
-        margin-right: 0;
+        margin-right: 40px;
     }
+
+    .prices__subscription-box-title {
+        font-size: 35px;
+        line-height: 42px;
+        padding-bottom: 56px;
+        padding-left: 15px;
+    }
+
+    .prices__contact-us {
+        max-width: 296px;
+    }
+
+    .prices__contact-us-long {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .prices__leafs {
+        margin-top: 0;
+    }
+
+    .prices__leafs-simg {
+        width: 100%;
+        height: auto;
+    }
+
 
     /* Prices 768px ends */
 
