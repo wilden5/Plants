@@ -493,6 +493,7 @@ html {
     border: 1px solid #E06733;
     border-radius: 5px;
     background-color: #FFFFFF;
+    margin-bottom: 40px;
 }
 
 .prices__leafs {
@@ -848,7 +849,7 @@ html {
     .prices__wrapper {
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        margin-bottom: 86px;
     }
 
     .prices__subscription-box {
@@ -869,6 +870,8 @@ html {
     .prices__contact-us-long {
         font-size: 25px;
         line-height: 35px;
+        padding-top: 100px;
+        margin-bottom: 28px;
     }
 
     .prices__leafs {
@@ -876,17 +879,20 @@ html {
     }
 
     .prices__leafs-simg {
-        width: 100%;
+        /* width: 100%; */
         height: auto;
     }
 
-
     /* Prices 768px ends */
+
+    /* Contacts 768px starts */
 
     .contacts {
         flex-wrap: wrap;
         flex-direction: column;
     }
+
+    /* Contacts 768px ends */
 
     .footer__wrapper {
         flex-wrap: wrap;
