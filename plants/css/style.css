@@ -368,6 +368,10 @@ html {
     margin-top: 0;
 }
 
+.service__main-card-pic768px {
+    display: none;
+}
+
 /* Service section ends */
 
 /* Prices section starts */
@@ -727,21 +731,119 @@ html {
 
     .about__wrapper {
         flex-wrap: wrap;
+        padding-top: 40px;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .about__description {
+        margin-right: 0;
+        padding-top: 0;
+        align-items: center;
+    }
+
+    .about__description-title {
+        max-width: 423px;
+        text-align: center;
+    }
+
+    .about__description-h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .about__description {
+        max-width: 668px;
+        margin-bottom: 65px;
+    }
+
+    .about__description-long {
+        max-width: 668px;
+        padding-top: 12px;
+    }
+
+    .about_houseplant-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about__houseplant {
+        max-width: 250px;
+        padding-top: 4px;
+        margin-bottom: 89px;
+        /* add margin to wrapper instead? */
     }
 
     /* About 768px ends */
+
+    /* Service 768px starts */
 
     .service {
         align-content: flex-start;
     }
 
-    .service__main {
+    .service__wrapper {
         flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        padding-left: 50px;
+        margin-bottom: 40px;
+    }
+
+    .service__main {
+        max-width: 668px;
+        padding-left: 50px;
+        margin-bottom: 70px;
+    }
+
+    .service__title {
+        margin-bottom: 40px;
+    }
+
+    .service__title-h2 {
+        font-size: 35px;
+        line-height: 45px;
     }
 
     .service__buttons {
-        flex-direction: column;
+        padding-top: 4px;
     }
+
+    .service__main-item {
+        max-width: 281px;
+    }
+
+    .service__main-card-pic {
+        display: none;
+    }
+
+    .service__main-card-pic768px {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .service__main-card-description {
+        max-width: 280px;
+    }
+
+    .service__main-card-description-long {
+        max-width: 250px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .service__main-item-sl {
+        margin-bottom: 38px;
+    }
+
+    .si-second-line {
+        margin-bottom: 38px;
+    }
+
+    /* Service 768px ends */
+
+    /* Prices 768px starts */
 
     .prices__wrapper {
         justify-content: flex-start;
@@ -750,6 +852,8 @@ html {
     .prices__subscription-box {
         margin-right: 0;
     }
+
+    /* Prices 768px ends */
 
     .contacts {
         flex-wrap: wrap;
