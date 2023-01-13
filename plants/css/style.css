@@ -511,10 +511,17 @@ html {
     margin-bottom: 3px;
 }
 
-.contacts__contact-woman {
+/* .contacts__contact-woman {
     padding-top: 51px;
     padding-left: 75px;
     margin-right: 47px;
+} */
+
+.contacts__contact-woman {
+    display: flex;
+    padding-left: 77px;
+    padding-top: 53px;
+    margin-right: 48px;
 }
 
 .contacts__title {
@@ -874,6 +881,10 @@ html {
         margin-bottom: 28px;
     }
 
+    .subscription-box-items__wrapper {
+        margin-top: 37px;
+    }
+
     .prices__leafs {
         margin-top: 0;
     }
@@ -890,6 +901,32 @@ html {
     .contacts {
         flex-wrap: wrap;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts__title {
+        margin-right: 2px;
+        padding-top: 41px;
+        margin-bottom: 98px;
+    }
+
+    .contacts__contact-woman {
+        max-width: 200px;
+        justify-content: center;
+        order: 2;
+        margin-right: 56px;
+    }
+
+    .contacts__contact-woman-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contacts__dropdown {
+        padding-top: 8px;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 198px;
     }
 
     /* Contacts 768px ends */
