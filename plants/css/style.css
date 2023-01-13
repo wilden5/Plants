@@ -931,9 +931,38 @@ html {
 
     /* Contacts 768px ends */
 
+    /* Footer 768px starts */
+
     .footer__wrapper {
-        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 768px;
+        margin: 0;
+        padding: 0;
+        padding-top: 17px;
     }
+
+    .footer__data {
+        margin-right: 0;
+        padding-left: 17px;
+        line-height: 24px;
+    }
+
+    .footer__rsschool {
+        margin-right: 0;
+        line-height: 24px;
+        margin-bottom: 25px;
+        padding-top: 3px;
+    }
+
+    .footer__data-copyright {
+        margin-right: 22px;
+    }
+
+    .footer__social-list {
+        padding-left: 10px;
+    }
+
+    /* Footer 768px ends */
 }
 
 /* Media 768px ends */
