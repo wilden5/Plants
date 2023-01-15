@@ -1024,20 +1024,144 @@ html {
     }
 
     .nav {
-        display: none;
+        position: fixed;
+        /* height: 100%; */
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        margin: 0;
+        background-color: #FFFFFF;
+        transform: translateX(100%);
+        transition: .4s all linear;
+    }
+
+    .nav-active {
+        transform: translateX(0);
+    }
+
+    .nav__list {
+        justify-content: flex-start;
+        flex-direction: column;
+    }
+
+    .nav__list-item {
+        margin: 0;
     }
 
     .header__burger {
         display: block;
     }
 
+    .nav-close {
+        width: 40px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
 
-    /* Media 380px ends */
+    .header__nav-close-line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: 50%;
+    }
+
+    .header__nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+
+
+    /* Header 380px ends */
+
+    /* Welcome 380px starts */
+
+    .welcome__wrapper {
+        padding-top: 16px;
+        padding-left: 15px;
+        margin-bottom: 24px;
+    }
+
+    .welcome__description-title {
+        margin-bottom: 21px;
+    }
+
+    .welcome__description-h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .welcome__description-learn-more {
+        font-size: 10px;
+        padding: 5px 16px;
+    }
+
+    .welcome__leafs {
+        display: none;
+    }
+
+    .welcome__description {
+        margin-right: 0;
+    }
+
+    .welcome__description-long {
+        margin-bottom: 26px;
+        padding-left: 0;
+    }
+
+    /* Welcome 380px ends */
+
+    /* About 380px starts */
+
+    .about__wrapper {
+        padding-top: 31px;
+    }
+
+    .about__description {
+        margin-bottom: 13px;
+    }
+
+    .about__description-title {
+        max-width: 288px;
+        margin-bottom: 0;
+    }
+
+    .about__description-h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .about__description-long {
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 330px;
+        padding-top: 14px;
+    }
+
+    .about__houseplant {
+        max-width: 150px;
+        margin-bottom: 22px;
+    }
+
+    /* About 380px ends */
+
+    /* Service 380px starts */
 
     .service__buttons {
         display: flex;
         flex-wrap: wrap;
     }
+
+    /* Service 380px ends */
 
     .contacts__dropdown {
         max-width: 300px;
