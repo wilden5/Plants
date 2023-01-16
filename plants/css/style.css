@@ -87,6 +87,41 @@ html {
     padding-right: 10px;
 }
 
+.header__burger {
+    display: none;
+    width: 40px;
+    height: 24px;
+    position: relative;
+}
+
+.burger__line {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #717171;
+    position: absolute;
+    left: 0;
+}
+
+.burger__line_first {
+    top: 0;
+}
+
+.burger__line_second {
+    top: 33%;
+    transform: translateY(-33.33%);
+}
+
+.burger__line_third {
+    top: 66%;
+    transform: translateY(-66.66%);
+}
+
+.burger__line_fourth {
+    bottom: 0;
+    height: 1.8px;
+}
+
 /* Header ends */
 
 /* Welcome section starts */
@@ -368,6 +403,10 @@ html {
     margin-top: 0;
 }
 
+.service__main-card-pic768px {
+    display: none;
+}
+
 /* Service section ends */
 
 /* Prices section starts */
@@ -489,6 +528,7 @@ html {
     border: 1px solid #E06733;
     border-radius: 5px;
     background-color: #FFFFFF;
+    margin-bottom: 40px;
 }
 
 .prices__leafs {
@@ -506,10 +546,17 @@ html {
     margin-bottom: 3px;
 }
 
-.contacts__contact-woman {
+/* .contacts__contact-woman {
     padding-top: 51px;
     padding-left: 75px;
     margin-right: 47px;
+} */
+
+.contacts__contact-woman {
+    display: flex;
+    padding-left: 77px;
+    padding-top: 53px;
+    margin-right: 48px;
 }
 
 .contacts__title {
@@ -651,3 +698,639 @@ html {
 }
 
 /* Footer ends */
+
+/* Media 768px starts */
+
+@media screen and (max-width: 768px) {
+
+    /* Header 768px starts */
+
+    .wrapper__header {
+        padding-top: 35px;
+    }
+
+    .header__info {
+        margin-right: 139px;
+        margin-bottom: 31px;
+    }
+
+    .nav__list {
+        padding-top: 0;
+    }
+
+    .nav__list-item {
+        margin-right: 47px;
+    }
+
+    /* Header 768px ends */
+
+    /* Welcome 768px starts */
+
+    .welcome__wrapper {
+        flex-wrap: wrap;
+        margin-bottom: 70px;
+        padding-top: 30px;
+        align-items: flex-start;
+    }
+
+    .welcome__leafs {
+        margin-right: 0;
+        max-width: 280px;
+        order: 3;
+    }
+
+    .welcome__leafs-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .welcome__description {
+        max-width: 346px;
+        margin-right: 42px;
+    }
+
+    .welcome__description-title {
+        margin-bottom: 30px;
+    }
+
+    .welcome__description-h1 {
+        font-size: 35px;
+    }
+
+    .welcome__description-long {
+        font-size: 16px;
+        margin-bottom: 35px;
+        line-height: 25px;
+        padding-left: 5px;
+    }
+
+    .welcome__description-learn-more {
+        padding-left: 26px;
+    }
+
+    /* Welcome 768px ends */
+
+    /* About 768px starts */
+
+    .about__wrapper {
+        flex-wrap: wrap;
+        padding-top: 40px;
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    .about__description {
+        margin-right: 0;
+        padding-top: 0;
+        align-items: center;
+    }
+
+    .about__description-title {
+        max-width: 423px;
+        text-align: center;
+    }
+
+    .about__description-h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .about__description {
+        max-width: 668px;
+        margin-bottom: 65px;
+    }
+
+    .about__description-long {
+        max-width: 668px;
+        padding-top: 12px;
+    }
+
+    .about_houseplant-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .about__houseplant {
+        max-width: 250px;
+        padding-top: 4px;
+        margin-bottom: 89px;
+        /* add margin to wrapper instead? */
+    }
+
+    /* About 768px ends */
+
+    /* Service 768px starts */
+
+    .service {
+        align-content: flex-start;
+    }
+
+    .service__wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 60px;
+        padding-left: 50px;
+        margin-bottom: 40px;
+    }
+
+    .service__main {
+        max-width: 668px;
+        padding-left: 50px;
+        margin-bottom: 70px;
+    }
+
+    .service__title {
+        margin-bottom: 40px;
+    }
+
+    .service__title-h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .service__buttons {
+        padding-top: 4px;
+    }
+
+    .service__main-item {
+        max-width: 281px;
+    }
+
+    .service__main-card-pic {
+        display: none;
+    }
+
+    .service__main-card-pic768px {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .service__main-card-description {
+        max-width: 280px;
+    }
+
+    .service__main-card-description-long {
+        max-width: 250px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .service__main-item-sl {
+        margin-bottom: 38px;
+    }
+
+    .si-second-line {
+        margin-bottom: 38px;
+    }
+
+    /* Service 768px ends */
+
+    /* Prices 768px starts */
+
+    .prices__wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 86px;
+    }
+
+    .prices__subscription-box {
+        margin-right: 40px;
+    }
+
+    .prices__subscription-box-title {
+        font-size: 35px;
+        line-height: 42px;
+        padding-bottom: 56px;
+        padding-left: 15px;
+    }
+
+    .prices__contact-us {
+        max-width: 296px;
+    }
+
+    .prices__contact-us-long {
+        font-size: 25px;
+        line-height: 35px;
+        padding-top: 100px;
+        margin-bottom: 28px;
+    }
+
+    .subscription-box-items__wrapper {
+        margin-top: 37px;
+    }
+
+    .prices__leafs {
+        margin-top: 0;
+    }
+
+    .prices__leafs-simg {
+        /* width: 100%; */
+        height: auto;
+    }
+
+    /* Prices 768px ends */
+
+    /* Contacts 768px starts */
+
+    .contacts {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contacts__title {
+        margin-right: 2px;
+        padding-top: 41px;
+        margin-bottom: 98px;
+    }
+
+    .contacts__contact-woman {
+        max-width: 200px;
+        justify-content: center;
+        order: 2;
+        margin-right: 56px;
+    }
+
+    .contacts__contact-woman-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .contacts__dropdown {
+        padding-top: 8px;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 198px;
+    }
+
+    /* Contacts 768px ends */
+
+    /* Footer 768px starts */
+
+    .footer__wrapper {
+        flex-direction: column;
+        max-width: 768px;
+        margin: 0;
+        padding: 0;
+        padding-top: 17px;
+    }
+
+    .footer__data {
+        margin-right: 0;
+        padding-left: 17px;
+        line-height: 24px;
+    }
+
+    .footer__rsschool {
+        margin-right: 0;
+        line-height: 24px;
+        margin-bottom: 25px;
+        padding-top: 3px;
+    }
+
+    .footer__data-copyright {
+        margin-right: 22px;
+    }
+
+    .footer__social-list {
+        padding-left: 10px;
+    }
+
+    /* Footer 768px ends */
+}
+
+/* Media 768px ends */
+
+/* Media 380px starts */
+
+@media screen and (max-width: 380px) {
+
+    /* Header 380px starts */
+
+    .header {
+        justify-content: flex-start;
+    }
+
+    .wrapper__header {
+        /* padding-top: 40px; */
+        align-items: flex-start;
+        margin-bottom: 13px;
+        padding-top: 35px;
+    }
+
+    .header__info {
+        padding-left: 23px;
+        margin-right: 215px;
+        padding-top: 5px;
+    }
+
+    .nav {
+        position: fixed;
+        /* height: 100%; */
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        margin: 0;
+        background-color: #EDF2EC;
+        transform: translateX(100%);
+        transition: .4s all linear;
+        /* border: 3px solid #E06733; */
+    }
+
+    .nav-active {
+        transform: translateX(0);
+        box-shadow: 1px 0px 15px 1px #499a18 inset
+    }
+
+    .nav__list {
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
+    }
+
+    .nav__list-item {
+        margin: 0;
+        font-size: 35px;
+        text-shadow: -1px 1px 0 #41ba45,
+            1px 1px 0 #E06733,
+            1px -1px 0 #42afac,
+            -1px -1px 0 #c6c23f;
+    }
+
+    .header__burger {
+        display: block;
+    }
+
+    .nav-close {
+        width: 40px;
+        height: 24px;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 11;
+    }
+
+    .header__nav-close-line {
+        display: block;
+        height: 2px;
+        width: 100%;
+        background-color: #000000;
+        position: absolute;
+        top: 50%;
+    }
+
+    .header__nav-close-line:first-child {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    .header__nav-close-line:last-child {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+
+
+
+    /* Header 380px ends */
+
+    /* Welcome 380px starts */
+
+    .welcome__wrapper {
+        padding-top: 16px;
+        padding-left: 15px;
+        margin-bottom: 24px;
+    }
+
+    .welcome__description-title {
+        margin-bottom: 21px;
+    }
+
+    .welcome__description-h1 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+
+    .welcome__description-learn-more {
+        font-size: 10px;
+        padding: 5px 16px;
+    }
+
+    .welcome__leafs {
+        display: none;
+    }
+
+    .welcome__description {
+        margin-right: 0;
+    }
+
+    .welcome__description-long {
+        margin-bottom: 26px;
+        padding-left: 0;
+    }
+
+    /* Welcome 380px ends */
+
+    /* About 380px starts */
+
+    .about__wrapper {
+        padding-top: 31px;
+    }
+
+    .about__description {
+        margin-bottom: 13px;
+    }
+
+    .about__description-title {
+        max-width: 288px;
+        margin-bottom: 0;
+    }
+
+    .about__description-h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .about__description-long {
+        font-size: 15px;
+        line-height: 25px;
+        max-width: 330px;
+        padding-top: 14px;
+    }
+
+    .about__houseplant {
+        max-width: 150px;
+        margin-bottom: 22px;
+    }
+
+    /* About 380px ends */
+
+    /* Service 380px starts */
+
+    .service__wrapper {
+        padding-top: 30px;
+        padding-left: 25px;
+    }
+
+    .service__main {
+        margin-bottom: 0px;
+    }
+
+    .service__title {
+        max-width: 187px;
+    }
+
+    .service__title-h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
+    .service__buttons {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 252px;
+        padding-top: 0;
+    }
+
+    .service__buttons-item {
+        width: 121px;
+        height: 35px;
+        margin-right: 0px;
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    .si-second-line {
+        margin-bottom: 34px;
+    }
+
+    .service__main-item-sl {
+        margin-bottom: 35px;
+    }
+
+    .service__main-item {
+        margin-bottom: 34px;
+    }
+
+    .service__main-item:last-child {
+        margin-bottom: 30px;
+    }
+
+    /* Service 380px ends */
+
+    /* Prices 380px starts */
+
+    .prices__wrapper {
+        padding-top: 25px;
+        margin-bottom: 0;
+    }
+
+    .prices__subscription-box {
+        padding-left: 42px;
+    }
+
+    .prices__subscription-box-title {
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 74px;
+        padding-bottom: 36px;
+    }
+
+    .prices__subscription-box-items {
+        max-width: 224px;
+    }
+
+    .prices__subscription-box-items-item {
+        max-width: 180px;
+    }
+
+    .prices__subscription-box-items-item-text {
+        font-size: 15px;
+        line-height: 20px;
+        padding-left: 9px;
+        margin: 16px 27px 16px 20px;
+    }
+
+    .subscription-box-items__wrapper {
+        margin: 29px 49px 27px 49px;
+    }
+
+    .prices__subscription-box-ibp1,
+    .prices__subscription-box-ibp2 {
+        margin-bottom: 11px;
+    }
+
+    .prices__contact-us {
+        max-width: 230px;
+    }
+
+    .prices__contact-us-long {
+        font-size: 20px;
+        padding-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .prices__contact-button {
+        font-size: 15px;
+        line-height: 19px;
+        margin-right: 55px;
+        padding: 7px 24px 7px 24px;
+    }
+
+    .prices__leafs-simg {
+        display: none;
+    }
+
+    /* Prices 380px ends */
+
+    /* Contacts 380px starts */
+
+    .contacts__dropdown {
+        max-width: 300px;
+        margin-bottom: 79px;
+        padding-top: 5px;
+    }
+
+    .contacts__dropdown-text {
+        padding-bottom: 3px;
+        padding-left: 19px;
+        padding-right: 207px;
+    }
+
+    .contacts__dropdown-button {
+        margin: 0;
+        padding-bottom: 18px;
+        margin-left: -6px;
+    }
+
+    .contacts__title {
+        font-size: 25px;
+        line-height: 32px;
+        margin-right: 5px;
+        padding-top: 25px;
+        margin-bottom: 82px;
+    }
+
+    .contacts__contact-woman {
+        max-width: 100px;
+        padding-left: 52px;
+    }
+
+    /* Contacts 380px ends */
+
+    /* Footer 380px starts */
+
+    .footer__wrapper {
+        padding-top: 5px;
+    }
+
+    .footer__rsschool {
+        margin-bottom: 13px;
+    }
+
+    /* Footer 380px ends */
+
+}
+
+/* Media 380px ends */
