@@ -1015,6 +1015,8 @@ html {
     .wrapper__header {
         /* padding-top: 40px; */
         align-items: flex-start;
+        margin-bottom: 13px;
+        padding-top: 23px;
     }
 
     .header__info {
@@ -1156,12 +1158,124 @@ html {
 
     /* Service 380px starts */
 
+    .service__wrapper {
+        padding-top: 30px;
+        padding-left: 25px;
+    }
+
+    .service__main {
+        margin-bottom: 0px;
+    }
+
+    .service__title {
+        max-width: 187px;
+    }
+
+    .service__title-h2 {
+        font-size: 25px;
+        line-height: 32px;
+    }
+
     .service__buttons {
         display: flex;
         flex-wrap: wrap;
+        max-width: 252px;
+        padding-top: 0;
+    }
+
+    .service__buttons-item {
+        width: 121px;
+        height: 35px;
+        margin-right: 0px;
+        font-size: 15px;
+        margin-bottom: 9px;
+    }
+
+    .si-second-line {
+        margin-bottom: 34px;
+    }
+
+    .service__main-item-sl {
+        margin-bottom: 35px;
+    }
+
+    .service__main-item {
+        margin-bottom: 34px;
+    }
+
+    .service__main-item:last-child {
+        margin-bottom: 30px;
     }
 
     /* Service 380px ends */
+
+    /* Prices 380px starts */
+
+    .prices__wrapper {
+        padding-top: 25px;
+        margin-bottom: 0;
+    }
+
+    .prices__subscription-box {
+        padding-left: 42px;
+    }
+
+    .prices__subscription-box-title {
+        font-size: 25px;
+        line-height: 30px;
+        padding-left: 74px;
+        padding-bottom: 36px;
+    }
+
+    .prices__subscription-box-items {
+        max-width: 224px;
+    }
+
+    .prices__subscription-box-items-item {
+        max-width: 180px;
+    }
+
+    .prices__subscription-box-items-item-text {
+        font-size: 15px;
+        line-height: 20px;
+        padding-left: 9px;
+        margin: 16px 27px 16px 20px;
+    }
+
+    .subscription-box-items__wrapper {
+        margin: 29px 49px 27px 49px;
+    }
+
+    .prices__subscription-box-ibp1,
+    .prices__subscription-box-ibp2 {
+        margin-bottom: 11px;
+    }
+
+    .prices__contact-us {
+        max-width: 230px;
+    }
+
+    .prices__contact-us-long {
+        font-size: 20px;
+        padding-top: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .prices__contact-button {
+        font-size: 15px;
+        line-height: 19px;
+        margin-right: 55px;
+        padding: 7px 24px 7px 24px;
+    }
+
+    .prices__leafs-simg {
+        display: none;
+    }
+
+    /* Prices 380px ends */
+
+    /* Contacts 380px starts */
 
     .contacts__dropdown {
         max-width: 300px;
@@ -1170,6 +1284,8 @@ html {
     .contacts__dropdown-button {
         margin: 0;
     }
+
+    /* Contacts 380px ends */
 
 }
 
