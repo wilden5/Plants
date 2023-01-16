@@ -1033,22 +1033,31 @@ html {
         left: 0;
         z-index: 10;
         margin: 0;
-        background-color: #FFFFFF;
+        background-color: #EDF2EC;
         transform: translateX(100%);
         transition: .4s all linear;
+        /* border: 3px solid #E06733; */
     }
 
     .nav-active {
         transform: translateX(0);
+        box-shadow: 1px 0px 15px 1px #499a18 inset
     }
 
     .nav__list {
         justify-content: flex-start;
         flex-direction: column;
+        align-items: center;
+        padding-left: 10px;
     }
 
     .nav__list-item {
         margin: 0;
+        font-size: 35px;
+        text-shadow: -1px 1px 0 #41ba45,
+            1px 1px 0 #E06733,
+            1px -1px 0 #42afac,
+            -1px -1px 0 #c6c23f;
     }
 
     .header__burger {
