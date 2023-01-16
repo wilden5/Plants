@@ -1016,7 +1016,7 @@ html {
         /* padding-top: 40px; */
         align-items: flex-start;
         margin-bottom: 13px;
-        padding-top: 23px;
+        padding-top: 35px;
     }
 
     .header__info {
@@ -1279,13 +1279,48 @@ html {
 
     .contacts__dropdown {
         max-width: 300px;
+        margin-bottom: 79px;
+        padding-top: 5px;
+    }
+
+    .contacts__dropdown-text {
+        padding-bottom: 3px;
+        padding-left: 19px;
+        padding-right: 207px;
     }
 
     .contacts__dropdown-button {
         margin: 0;
+        padding-bottom: 18px;
+        margin-left: -6px;
+    }
+
+    .contacts__title {
+        font-size: 25px;
+        line-height: 32px;
+        margin-right: 5px;
+        padding-top: 25px;
+        margin-bottom: 82px;
+    }
+
+    .contacts__contact-woman {
+        max-width: 100px;
+        padding-left: 52px;
     }
 
     /* Contacts 380px ends */
+
+    /* Footer 380px starts */
+
+    .footer__wrapper {
+        padding-top: 5px;
+    }
+
+    .footer__rsschool {
+        margin-bottom: 13px;
+    }
+
+    /* Footer 380px ends */
 
 }
 
