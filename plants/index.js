@@ -23,3 +23,43 @@ console.log(" 1. Вёрстка соответствует макету. Шир�
 }())
 
 /* Burger handler ends */
+
+/* Service buttons handler starts */
+
+const cardsLoop = (element) => {
+    document.querySelectorAll('.service__main-item').forEach((item) => {
+        if (item.classList.contains(element)) {
+            item.classList.toggle('iactive');
+        }
+    })
+}
+
+const buttonHandler = (mainButton, secondaryButton, thirdButton, mainItem, secondItem, thirdItem) => {
+    const orangeState = 'orange-state';
+    mainButton.addEventListener('click', () => {
+        mainButton.classList.toggle(orangeState);
+        if (secondaryButton.classList.contains(orangeState) || thirdButton.classList.contains(orangeState)) {
+            cardsLoop(mainItem);
+        } else {
+            cardsLoop(secondItem) || cardsLoop(thirdItem);
+        }
+    })
+}
+
+(function () {
+    const gardensButton = document.querySelector('.bgardens');
+    const lawnCareButton = document.querySelector('.blawn');
+    const plantingButton = document.querySelector('.bplanting')
+    const itemGardenCareString = 'item-garden-care';
+    const itemPlantingString = 'item-planting';
+    const itemLawnCareString = 'item-lawn-care';
+
+    buttonHandler(gardensButton, lawnCareButton, plantingButton, itemGardenCareString, itemPlantingString, itemLawnCareString);
+
+    buttonHandler(lawnCareButton, gardensButton, plantingButton, itemLawnCareString, itemPlantingString, itemGardenCareString);
+
+    buttonHandler(plantingButton, gardensButton, lawnCareButton, itemPlantingString, itemGardenCareString, itemLawnCareString);
+
+}())
+
+/* Service buttons handler ends */

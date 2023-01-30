@@ -211,9 +211,16 @@ html {
 .welcome__description-learn-more:hover,
 .service__buttons-item:hover,
 .prices__contact-button:hover {
+    transition: all 1.5s ease 0s;
     cursor: pointer;
     transform: translateY(1px);
     box-shadow: inset 0px 5px 10px 2px rgba(0, 0, 0, 0.25);
+}
+
+.service__buttons-item:active {
+    transition: all 1.5s ease 0s;
+    background-color: #E06733;
+    color: white;
 }
 
 /* Welcome section ends */
@@ -325,6 +332,7 @@ html {
     justify-content: space-between;
     max-width: 559px;
     padding-top: 7px;
+    transition: all 1.5s ease 0s;
 }
 
 .service__buttons-item {
@@ -355,9 +363,11 @@ html {
 }
 
 .service__main-item {
+    transition: all 1.5s ease 0s;
     max-width: 330px;
     display: flex;
     flex-direction: column;
+    /* filter: blur(3px); */
 }
 
 .service__main-item:hover {
@@ -1334,3 +1344,27 @@ html {
 }
 
 /* Media 380px ends */
+
+/* CSS Plants3 starts*/
+
+.item-planting-active,
+.iactive {
+    transition: all 1.5s ease 0s;
+    filter: blur(3px);
+}
+
+.item-garden-care-active {
+    filter: blur(3px);
+}
+
+.item-lawn-care-active {
+    filter: blur(3px);
+}
+
+.orange-state {
+    transition: all 1.5s ease 0s;
+    background-color: #E06733;
+    color: white;
+}
+
+/* CSS Plants3 ends*/
