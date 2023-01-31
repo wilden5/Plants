@@ -210,7 +210,8 @@ html {
 
 .welcome__description-learn-more:hover,
 .service__buttons-item:hover,
-.prices__contact-button:hover {
+.prices__contact-button:hover,
+.accordion__button:hover {
     transition: all 1.5s ease 0s;
     cursor: pointer;
     transform: translateY(1px);
@@ -473,7 +474,7 @@ html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 250px;
+    width: 250px;
     background: #EDF2EC;
     border-radius: 20px;
 }
@@ -1368,3 +1369,114 @@ html {
 }
 
 /* CSS Plants3 ends*/
+
+.accordion {
+    cursor: pointer;
+}
+
+.accordion[open] .accordion__icon {
+    background: url(../assets/svg/accordion_btn_state-open.svg) no-repeat;
+}
+
+.accordion[open] {
+    background: #D6E7D2;
+    border-radius: 20px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.accordion__control {
+    display: flex;
+    align-items: center;
+}
+
+.accordion__header {
+    max-width: 100px;
+    margin: 16px 90px 16px 40px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    list-style: none;
+}
+
+.header-standard {
+    margin-right: 64px;
+}
+
+.header-pro-care {
+    margin-right: 73px;
+}
+
+.accordion__description::before {
+    content: "";
+    position: absolute;
+    width: 65%;
+    top: 45px;
+    border: 0.5px solid #AEA1A1;
+}
+
+.accordion__icon {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    background: url(../assets/svg/accordion_btn.svg) no-repeat;
+}
+
+.accordion__content {
+    width: 250px;
+}
+
+.accordion__description {
+    margin: 0;
+    max-width: 169px;
+    padding-left: 40px;
+    margin-bottom: 6px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 10px;
+    line-height: 10px;
+    color: #717171;
+}
+
+.accordion__price {
+    padding-left: 40px;
+    margin: 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.price__span-orange {
+    font-weight: 700;
+    color: #E06733;
+    font-size: 16px;
+}
+
+.accordion__wrapper {
+    padding-left: 39px;
+}
+
+.accordion__button {
+    cursor: pointer;
+    border-radius: 10px;
+    color: #717171;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    border: none;
+    padding: 3px 27px 2px 20px;
+    margin-bottom: 12px;
+}
+
+.prices__subscription-box-items-item:hover {
+    background-color: #D6E7D2;
+}

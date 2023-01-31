@@ -62,4 +62,20 @@ const buttonHandler = (mainButton, secondaryButton, thirdButton, mainItem, secon
 
 }())
 
-/* Service buttons handler ends */
+    /* Service buttons handler ends */
+
+    /* Prices handler starts */
+
+    (function () {
+        document.querySelectorAll('details').forEach((accordion) => {
+            accordion.addEventListener('click', (e) => {
+                document.querySelectorAll('details').forEach((event) => {
+                    if (accordion !== event) {
+                        event.removeAttribute('open');
+                    }
+                })
+            })
+        })
+    }())
+
+/* Prices handler ends */
