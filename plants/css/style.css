@@ -1480,3 +1480,68 @@ html {
 .prices__subscription-box-items-item:hover {
     background-color: #D6E7D2;
 }
+
+/* Custom select starts */
+
+.contacts__dropdown {
+    position: relative;
+}
+
+.contacts__dropdown.caactive .select__body {
+    display: block;
+}
+
+.select__header {
+    display: flex;
+    border: solid 1px red;
+    cursor: pointer;
+}
+
+.select__current {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 8px;
+}
+
+.select__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    margin-left: auto;
+}
+
+.select__body {
+    position: absolute;
+    display: none;
+    left: 0;
+    right: 0;
+    top: 100%;
+    border: 1px solid red;
+    border-top: 0;
+}
+
+.select__item {
+    /* height: auto; */
+    line-height: 24px;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    color: #499A18;
+}
+
+/* .select__item::before {
+    color: inherit;
+    content: "";
+    position: absolute;
+    width: 80%;
+    top: 30px;
+    border: 0.5px solid #AEA1A1;
+} */
+
+.select__item:hover {
+    color: #717171;
+}

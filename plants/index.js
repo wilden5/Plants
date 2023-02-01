@@ -79,3 +79,23 @@ const buttonHandler = (mainButton, secondaryButton, thirdButton, mainItem, secon
     }())
 
 /* Prices handler ends */
+
+/* Select handler starts */
+
+let select = function () {
+    let selectHeader = document.querySelectorAll('.select__header');
+    let selectItem = document.querySelectorAll('.select__item');
+
+    selectHeader.forEach(item => {
+        item.addEventListener('click', selectToggle)
+    });
+
+    function selectToggle() {
+        this.parentElement.classList.toggle('caactive');
+        selectHeader.classList.add('her')
+    }
+};
+
+select();
+
+/* Select handler ends */
