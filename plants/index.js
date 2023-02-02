@@ -60,27 +60,38 @@ const buttonHandler = (mainButton, secondaryButton, thirdButton, mainItem, secon
 
     buttonHandler(plantingButton, gardensButton, lawnCareButton, itemPlantingString, itemGardenCareString, itemLawnCareString);
 
-}())
+}());
 
-    /* Service buttons handler ends */
+/* Service buttons handler ends */
 
-    /* Prices handler starts */
+/* Prices handler starts */
 
-    (function () {
-        document.querySelectorAll('details').forEach((accordion) => {
-            accordion.addEventListener('click', (e) => {
-                document.querySelectorAll('details').forEach((event) => {
-                    if (accordion !== event) {
-                        event.removeAttribute('open');
-                    }
-                })
+(function () {
+    document.querySelectorAll('details').forEach((accordion) => {
+        accordion.addEventListener('click', (e) => {
+            document.querySelectorAll('details').forEach((event) => {
+                if (accordion !== event) {
+                    event.removeAttribute('open');
+                }
             })
-        })
-    }())
+        });
+    })
+}());
 
 /* Prices handler ends */
 
 /* Select handler starts */
+
+(function () {
+    let selectItem = document.querySelectorAll('.select__item');
+
+    selectItem.forEach((item) => {
+        item.addEventListener('click', () => {
+            document.querySelector('.contacts__dropdown').style.backgroundColor = '#C1E698';
+        })
+    })
+}());
+
 
 let select = function () {
     let selectHeader = document.querySelectorAll('.select__header');
@@ -90,11 +101,24 @@ let select = function () {
         item.addEventListener('click', selectToggle)
     });
 
+    selectItem.forEach(item => {
+        item.addEventListener('click', selectChoose)
+    });
+
     function selectToggle() {
         this.parentElement.classList.toggle('caactive');
-        selectHeader.classList.add('her')
+    }
+
+    function selectChoose() {
+        let text = this.innerText,
+            select = this.closest('.contacts__dropdown'),
+            currentText = select.querySelector('.select__current');
+        currentText.innerText = text;
+        select.classList.remove('caactive');
+
     }
 };
+
 
 select();
 
