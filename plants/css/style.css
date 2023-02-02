@@ -1498,7 +1498,6 @@ html {
 .select__header {
     position: relative;
     display: flex;
-    /* border: solid 1px red; */
     cursor: pointer;
     align-items: center;
     width: 450px;
@@ -1541,7 +1540,6 @@ html {
     left: 0;
     right: 0;
     top: 100%;
-    /* border: 1px solid red; */
     border-top: 0;
     background-color: #DCE9D9;
     padding-left: 35px;

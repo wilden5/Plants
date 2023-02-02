@@ -83,43 +83,34 @@ const buttonHandler = (mainButton, secondaryButton, thirdButton, mainItem, secon
 /* Select handler starts */
 
 (function () {
-    let selectItem = document.querySelectorAll('.select__item');
+    const selectItem = document.querySelectorAll('.select__item');
+    const selectHeader = document.querySelectorAll('.select__header');
 
     selectItem.forEach((item) => {
         item.addEventListener('click', () => {
             document.querySelector('.contacts__dropdown').style.backgroundColor = '#C1E698';
         })
     })
-}());
-
-
-let select = function () {
-    let selectHeader = document.querySelectorAll('.select__header');
-    let selectItem = document.querySelectorAll('.select__item');
 
     selectHeader.forEach(item => {
-        item.addEventListener('click', selectToggle)
+        item.addEventListener('click', selectToggleState)
     });
 
     selectItem.forEach(item => {
-        item.addEventListener('click', selectChoose)
+        item.addEventListener('click', selectUpdateCurrentValue)
     });
 
-    function selectToggle() {
+    function selectToggleState() {
         this.parentElement.classList.toggle('caactive');
     }
 
-    function selectChoose() {
+    function selectUpdateCurrentValue() {
         let text = this.innerText,
             select = this.closest('.contacts__dropdown'),
             currentText = select.querySelector('.select__current');
         currentText.innerText = text;
         select.classList.remove('caactive');
-
     }
-};
-
-
-select();
+}());
 
 /* Select handler ends */
