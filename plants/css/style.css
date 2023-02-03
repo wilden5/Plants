@@ -1535,6 +1535,7 @@ html {
 }
 
 .select__body {
+    z-index: 100;
     position: absolute;
     display: none;
     left: 0;
@@ -1573,7 +1574,7 @@ html {
     position: absolute;
     right: 36px;
     width: 379px;
-    bottom: 173px;
+    /* bottom: 173px; */
     height: 1px;
     background: #D9D9D9;
     display: block;
@@ -1617,4 +1618,126 @@ html {
 .a3:hover:after,
 .a4:hover:after {
     background: #717171;
+}
+
+.item__details-card1 {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    width: 444px;
+    height: 214px;
+    top: 100px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.item__details-card2 {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    width: 444px;
+    height: 214px;
+    top: 100px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.item__details-card3 {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    width: 444px;
+    height: 214px;
+    top: 100px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.item__details-card4 {
+    visibility: hidden;
+    display: flex;
+    position: absolute;
+    width: 444px;
+    height: 214px;
+    top: 100px;
+    border: 1px solid #000000;
+    border-radius: 20px;
+    flex-wrap: wrap;
+}
+
+.show-card {
+    visibility: visible;
+}
+
+.item__text {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-right: 10px;
+    padding-left: 35px;
+    padding-top: 14px;
+}
+
+.item__data {
+    padding-top: 14px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.05em;
+    color: #717171;
+}
+
+.item__call-us-button {
+    cursor: pointer;
+    border: 1px solid #E06733;
+    border-radius: 5px;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    background-color: #EDF2EC;
+    color: #717171;
+    width: 122px;
+    height: 26px;
+    margin-left: 161px;
+    margin-bottom: 10px;
+}
+
+.item__call-us-button:hover {
+    background-color: #E06733;
+    color: white;
+}
+
+.icard1 {
+    position: relative;
+}
+
+.item__call {
+    text-decoration: none;
+    font-family: 'Inika';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 10px;
+    line-height: 13px;
+    text-align: center;
+    color: #717171;
+}
+
+.item__call:hover {
+    color: white;
 }

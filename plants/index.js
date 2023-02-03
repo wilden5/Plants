@@ -85,6 +85,55 @@ const buttonHandler = (mainButton, secondaryButton, thirdButton, mainItem, secon
 (function () {
     const selectItem = document.querySelectorAll('.select__item');
     const selectHeader = document.querySelectorAll('.select__header');
+    const card1 = document.querySelector('.a1');
+    const card2 = document.querySelector('.a2');
+    const card3 = document.querySelector('.a3');
+    const card4 = document.querySelector('.a4');
+
+    card1.addEventListener('click', () => {
+        if (document.querySelectorAll('.show-card').length > 0) {
+            document.querySelectorAll('.idcard').forEach((item) => {
+                item.classList.remove('show-card');
+                document.querySelector('.item__details-card1').classList.add('show-card');
+            })
+        } else {
+            document.querySelector('.item__details-card1').classList.add('show-card');
+        }
+    })
+
+    card2.addEventListener('click', () => {
+        if (document.querySelectorAll('.show-card').length > 0) {
+            document.querySelectorAll('.idcard').forEach((item) => {
+                item.classList.remove('show-card');
+                document.querySelector('.item__details-card2').classList.add('show-card');
+            })
+        } else {
+            document.querySelector('.item__details-card2').classList.add('show-card');
+        }
+    })
+
+    card3.addEventListener('click', () => {
+        if (document.querySelectorAll('.show-card').length > 0) {
+            document.querySelectorAll('.idcard').forEach((item) => {
+                item.classList.remove('show-card');
+                document.querySelector('.item__details-card3').classList.add('show-card');
+            })
+        } else {
+            document.querySelector('.item__details-card3').classList.add('show-card');
+        }
+    })
+
+    card4.addEventListener('click', () => {
+        if (document.querySelectorAll('.show-card').length > 0) {
+            document.querySelectorAll('.idcard').forEach((item) => {
+                item.classList.remove('show-card');
+                document.querySelector('.item__details-card4').classList.add('show-card');
+            })
+        } else {
+            document.querySelector('.item__details-card4').classList.add('show-card');
+        }
+    })
+
 
     selectItem.forEach((item) => {
         item.addEventListener('click', () => {
