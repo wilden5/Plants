@@ -1,7 +1,7 @@
-console.log(" 1. Вёрстка соответствует макету. Ширина экрана 768px +24" +
-    "\n 2. Вёрстка соответствует макету. Ширина экрана 380px +24" +
-    "\n 3. Ни на одном из разрешений до 320px включительно не появляется горизонтальная полоса прокрутки. " +
-    "\n 4. На ширине экрана 380рх и меньше реализовано адаптивное меню +22 \n Итоговая оценка: 75 баллов");
+console.log(" 1. При нажатии на кнопки:Gargens,Lawn,Planting происходит смена фокуса на услугах в разделе service +50" +
+    "\n 2. Accordion в секции prices реализация 3-х выпадающих списков об услугах и ценах + 50" +
+    "\n 3. В разделе contacts реализован select с выбором городов +25" +
+    "\n Итоговая оценка: 125 баллов");
 
 
 /* Burger handler starts */
@@ -38,7 +38,6 @@ function func() {
     document.querySelectorAll('.service__buttons-item').forEach((item) => {
         if (document.querySelectorAll('.orange-state').length === 2) {
             if (!item.classList.contains('orange-state')) {
-                console.log('dava true')
                 item.disabled = true;
             }
         } else {
