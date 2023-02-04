@@ -103,13 +103,13 @@
                     <h2 class="service__title-h2">Service and our projects</h2>
                 </div>
                 <div class="service__buttons">
-                    <button class="service__buttons-item">Gardens</button>
-                    <button class="service__buttons-item">Lawn</button>
-                    <button class="service__buttons-item">Planting</button>
+                    <button class="service__buttons-item bgardens">Gardens</button>
+                    <button class="service__buttons-item blawn">Lawn</button>
+                    <button class="service__buttons-item bplanting">Planting</button>
                 </div>
             </div>
             <div class="service__main">
-                <div class="service__main-item si-second-line">
+                <div class="service__main-item si-second-line item-garden-care">
                     <img class="service__main-card-pic" src="./assets/png/first.png" alt="first-pic">
                     <img class="service__main-card-pic768px" src="./assets/png/first768.png" alt="first-pic-768">
                     <div class="service__main-card-description">
@@ -117,7 +117,7 @@
                         <p class="service__main-card-description-long">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service__main-item service__main-item-sl">
+                <div class="service__main-item service__main-item-sl item-planting">
                     <img class="service__main-card-pic" src="./assets/png/second.png" alt="second-pic">
                     <img class="service__main-card-pic768px" src="./assets/png/second768.png" alt="second-pic-768">
                     <div class="service__main-card-description">
@@ -125,7 +125,7 @@
                         <p class="service__main-card-description-long">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service__main-item si-second-line">
+                <div class="service__main-item si-second-line item-lawn-care">
                     <img class="service__main-card-pic" src="./assets/png/third.png" alt="third-pic">
                     <img class="service__main-card-pic768px" src="./assets/png/third768.png" alt="third-pic-768">
                     <div class="service__main-card-description">
@@ -133,7 +133,7 @@
                         <p class="service__main-card-description-long">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service__main-item">
+                <div class="service__main-item item-planting">
                     <img class="service__main-card-pic" src="./assets/png/fourth.png" alt="fourth-pic">
                     <img class="service__main-card-pic768px" src="./assets/png/fourth768.png" alt="fourth-pic-768">
                     <div class="service__main-card-description">
@@ -141,7 +141,7 @@
                         <p class="service__main-card-description-long">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service__main-item">
+                <div class="service__main-item item-garden-care">
                     <img class="service__main-card-pic" src="./assets/png/fifth.png" alt="fifth-pic">
                     <img class="service__main-card-pic768px" src="./assets/png/fifth768.png" alt="fifth-pic-768">
                     <div class="service__main-card-description">
@@ -149,7 +149,7 @@
                         <p class="service__main-card-description-long">Lorem Ipsum has been the industry</p>
                     </div>
                 </div>
-                <div class="service__main-item">
+                <div class="service__main-item item-planting">
                     <img class="service__main-card-pic" src="./assets/png/six.png" alt="sixth-pic">
                     <img class="service__main-card-pic768px" src="./assets/png/sixth768.png" alt="sixth-pic-768">
                     <div class="service__main-card-description">
@@ -166,19 +166,74 @@
                     <div class="prices__subscription-box-items">
                         <div class="subscription-box-items__wrapper">
                             <div class="prices__subscription-box-items-item prices__subscription-box-ibp1">
-                                <!-- accordion -->
-                                <p class="prices__subscription-box-items-item-text">Basics</p>
-                                <button class="prices__subscription-box-items-item-button"></button>
+                                <details class="accordion">
+                                    <summary class="accordion__control">
+                                        <h3 class="accordion__header">
+                                            Basics
+                                        </h3>
+                                        <span class="accordion__icon"></span>
+                                    </summary>
+                                    <div class="accordion__content">
+                                        <p class="accordion__description">
+                                            Release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently
+                                        </p>
+                                        <p class="accordion__price">
+                                            <span class="price__span-orange">$15</span> / per hour
+                                        </p>
+                                        <div class="accordion__wrapper">
+                                            <button onclick="window.location.href='#contacts';"
+                                                class="accordion__button">Order</button>
+                                        </div>
+                                    </div>
+                                </details>
                             </div>
                             <div class="prices__subscription-box-items-item prices__subscription-box-ibp2">
-                                <p class="prices__subscription-box-items-item-text">Standard</p>
-                                <button class="prices__subscription-box-items-item-button"></button>
+                                <details class="accordion">
+                                    <summary class="accordion__control">
+                                        <h3 class="accordion__header header-standard">
+                                            Standard
+                                        </h3>
+                                        <span class="accordion__icon"></span>
+                                    </summary>
+                                    <div class="accordion__content">
+                                        <p class="accordion__description">
+                                            Release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently
+                                        </p>
+                                        <p class="accordion__price">
+                                            <span class="price__span-orange">$25</span> / per hour
+                                        </p>
+                                        <div class="accordion__wrapper">
+                                            <button onclick="window.location.href='#contacts';"
+                                                class="accordion__button">Order</button>
+                                        </div>
+                                    </div>
+                                </details>
                             </div>
                             <div class="prices__subscription-box-items-item">
-                                <p class="prices__subscription-box-items-item-text">Pro care</p>
-                                <button class="prices__subscription-box-items-item-button"></button>
+                                <details class="accordion">
+                                    <summary class="accordion__control">
+                                        <h3 class="accordion__header header-pro-care">
+                                            Pro care
+                                        </h3>
+                                        <span class="accordion__icon"></span>
+                                    </summary>
+                                    <div class="accordion__content">
+                                        <p class="accordion__description">
+                                            Release of Letraset sheets containing Lorem Ipsum passages, and more
+                                            recently
+                                        </p>
+                                        <p class="accordion__price">
+                                            <span class="price__span-orange">$35</span> / per hour
+                                        </p>
+                                        <div class="accordion__wrapper">
+                                            <button onclick="window.location.href='#contacts';"
+                                                class="accordion__button">Order</button>
+                                        </div>
+                                    </div>
+                                </details>
                             </div>
-                            <!-- accordion -->
                         </div>
                     </div>
                 </div>
@@ -196,11 +251,74 @@
                 <img src="./assets/png/contact_woman1.png" alt="contact-woman" class="contacts__contact-woman-img">
             </div>
             <h2 class="contacts__title">Contact us</h2>
-            <div class="contacts__dropdown">
-                <p class="contacts__dropdown-text">City</p>
-                <!-- accordion -->
-                <button class="contacts__dropdown-button"></button>
-                <!-- accordion -->
+            <div class="contacts__dropdown"> <!-- .select -->
+                <div class="select__header">
+                    <span class="select__current">City</span>
+                    <div class="select__icon"></div>
+                </div>
+                <div class="select__body">
+                    <div class="select__item a1 icard1">Canandaigua, NY
+                    </div>
+                    <div class="select__item a2">New York City</div>
+                    <div class="select__item a3">Yonkers, NY</div>
+                    <div class="select__item a4">Sherrill, NY</div>
+                </div>
+                <div class="item__details-card1 idcard">
+                    <div class="item__text">
+                        <span class="item__header">City:</span>
+                        <span class="item__header">Phone:</span>
+                        <span class="item__header">Office address:</span>
+                    </div>
+                    <div class="item__data">
+                        <span class="item__datacard">Canandaigua, NY</span>
+                        <span class="item__datacard">+1 585 393 0001</span>
+                        <span class="item__datacard">151 Charlotte Street</span>
+                    </div>
+                    <button class="item__call-us-button"><a href="tel:+15853930001" class="item__call">Call
+                            us</a></button>
+                </div>
+                <div class="item__details-card2 idcard">
+                    <div class="item__text">
+                        <span class="item__header">City:</span>
+                        <span class="item__header">Phone:</span>
+                        <span class="item__header">Office address:</span>
+                    </div>
+                    <div class="item__data">
+                        <span class="item__datacard">New York City</span>
+                        <span class="item__datacard">+1 212 456 0002</span>
+                        <span class="item__datacard">9 East 91st Street</span>
+                    </div>
+                    <button class="item__call-us-button"><a href="tel:+12124560002" class="item__call">Call
+                            us</a></button>
+                </div>
+                <div class="item__details-card3 idcard">
+                    <div class="item__text">
+                        <span class="item__header">City:</span>
+                        <span class="item__header">Phone:</span>
+                        <span class="item__header">Office address:</span>
+                    </div>
+                    <div class="item__data">
+                        <span class="item__datacard">Yonkers, NY</span>
+                        <span class="item__datacard">+1 914 678 0003</span>
+                        <span class="item__datacard">511 Warburton Ave</span>
+                    </div>
+                    <button class="item__call-us-button"><a href="tel:+19146780003" class="item__call">Call
+                            us</a></button>
+                </div>
+                <div class="item__details-card4 idcard">
+                    <div class="item__text">
+                        <span class="item__header">City:</span>
+                        <span class="item__header">Phone:</span>
+                        <span class="item__header">Office address:</span>
+                    </div>
+                    <div class="item__data">
+                        <span class="item__datacard">Sherrill, NY</span>
+                        <span class="item__datacard">+1 315 908 0004</span>
+                        <span class="item__datacard">14 WEST Noyes BLVD</span>
+                    </div>
+                    <button class="item__call-us-button"><a href="tel:+13159080004" class="item__call">Call
+                            us</a></button>
+                </div>
             </div>
         </section>
     </main>
