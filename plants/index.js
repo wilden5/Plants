@@ -34,10 +34,26 @@ const cardsLoop = (element) => {
     })
 }
 
-const buttonHandler = (mainButton, secondaryButton, thirdButton, mainItem, secondItem, thirdItem) => {
+function func() {
+    document.querySelectorAll('.service__buttons-item').forEach((item) => {
+        if (document.querySelectorAll('.orange-state').length === 2) {
+            if (!item.classList.contains('orange-state')) {
+                console.log('dava true')
+                item.disabled = true;
+            }
+        } else {
+            document.querySelectorAll('.service__buttons-item').forEach((item) => {
+                item.disabled = false;
+            })
+        }
+    })
+}
+
+const buttonHandler = (callback, mainButton, secondaryButton, thirdButton, mainItem, secondItem, thirdItem) => {
     const orangeState = 'orange-state';
     mainButton.addEventListener('click', () => {
         mainButton.classList.toggle(orangeState);
+        callback()
         if (secondaryButton.classList.contains(orangeState) || thirdButton.classList.contains(orangeState)) {
             cardsLoop(mainItem);
         } else {
@@ -54,11 +70,11 @@ const buttonHandler = (mainButton, secondaryButton, thirdButton, mainItem, secon
     const itemPlantingString = 'item-planting';
     const itemLawnCareString = 'item-lawn-care';
 
-    buttonHandler(gardensButton, lawnCareButton, plantingButton, itemGardenCareString, itemPlantingString, itemLawnCareString);
+    buttonHandler(func, gardensButton, lawnCareButton, plantingButton, itemGardenCareString, itemPlantingString, itemLawnCareString);
 
-    buttonHandler(lawnCareButton, gardensButton, plantingButton, itemLawnCareString, itemPlantingString, itemGardenCareString);
+    buttonHandler(func, lawnCareButton, gardensButton, plantingButton, itemLawnCareString, itemPlantingString, itemGardenCareString);
 
-    buttonHandler(plantingButton, gardensButton, lawnCareButton, itemPlantingString, itemGardenCareString, itemLawnCareString);
+    buttonHandler(func, plantingButton, gardensButton, lawnCareButton, itemPlantingString, itemGardenCareString, itemLawnCareString);
 
 }());
 
